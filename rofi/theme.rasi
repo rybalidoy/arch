@@ -1,0 +1,35 @@
+configuration {
+    font: "JetBrainsMono Nerd Font 12";
+}
+
+* {
+    background: transparent;
+    background-color: transparent;
+    text-color: #ffffff;
+}
+
+window {
+    transparency: "real";
+    background-color: rgba(0, 0, 0, 0.4); /* slightly translucent black for visible blur */
+    padding: 10px;
+    border: 2px;
+    border-color: rgba(65, 65, 65, 0.45);
+    border-radius: 16px;
+}
+
+mainbox {
+    padding: 10px;
+    spacing: 10px;
+}
+
+inputbar, listview, element, message, button {
+    background-color: transparent;
+    text-color: #ffffff;
+    padding: 4px 12px;
+    border-radius: 16px;
+}
+
+element selected, button selected {
+    background-color: rgba(65, 64, 64, 0.8);
+    padding: 4px;
+}

@@ -1,0 +1,186 @@
+/* ==============================
+   Waybar Theme - Coffee SSH Style
+   ============================== */
+
+#waybar {
+    background-color: #000000;
+    color: #d1d1d1;
+    font-family: "Figtree", sans-serif; /* SSH terminal navbar font */
+    font-size: 13px;
+    font-weight: 500;
+    border-bottom: 1px solid #222222; /* thin divider line */
+}
+
+/* ------------------------------
+   Workspaces as Tabs
+   ------------------------------ */
+#workspaces button {
+    color: #d1d1d1;
+    font-weight: 500;
+    margin: 0;
+    padding: 6px 14px;
+    border-radius: 0;
+    background: transparent;
+    border: none;
+    border-right: 1px solid #222222;
+    box-shadow: none;     /* remove outline */
+    outline: none;        /* remove focus outline */
+}
+
+#workspaces button:first-child {
+    border-left: 1px solid #222222;
+}
+
+#workspaces button.active {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff; /* underline highlight */
+}
+
+#workspaces button:hover {
+    background-color: #222222;
+    color: #ffffff;
+    border: none;        /* no outline on hover */
+    box-shadow: none;
+    outline: none;
+}
+
+/* ------------------------------
+   Window Title
+   ------------------------------ */
+#window {
+    margin: 0 8px;
+    padding: 4px 12px;
+    color: #d1d1d1;
+}
+
+/* ------------------------------
+   Cava Visualizer
+   ------------------------------ */
+#cava {
+    color: #d1d1d1;
+    padding: 0 10px;
+}
+
+/* ------------------------------
+   System Modules (CPU, Net, etc.)
+    border-radius: 4px;
+   ------------------------------ */
+#cpu, #memory, #temperature, #network, #mpd, #pulseaudio,
+#tray, #custom-powermenu, #scratchpad, #idle_inhibitor,
+#backlight, #keyboard-state, #power-profiles-daemon, #language {
+    color: #d1d1d1;
+    margin: 4px 2px;
+    padding: 4px 10px;
+}
+
+/* CPU Highlight */
+#cpu {
+  color: #d1d1d1;
+  font-weight: 500;
+  margin: 0;
+  padding: 6px 14px;
+  border-radius: 0;
+  background: transparent;
+  border: none;
+  border-right: 1px solid #222222;
+  box-shadow: none;     /* remove outline */
+  outline: none;        /* remove focus outline */
+}
+
+/* Memory */
+#memory {
+  color: #d1d1d1;
+  font-weight: 500;
+  margin: 0;
+  padding: 6px 14px;
+  border-radius: 0;
+  background: transparent;
+  border: none;
+  border-right: 1px solid #222222;
+  box-shadow: none;     /* remove outline */
+  outline: none;        /* remove focus outline */
+}
+
+/* Network */
+#network {
+  color: #d1d1d1;
+  font-weight: 500;
+  margin: 0;
+  padding: 6px 14px;
+  border-radius: 0;
+  background: transparent;
+  border: none;
+  border-right: 1px solid #222222;
+  box-shadow: none;     /* remove outline */
+  outline: none;        /* remove focus outline */
+}
+
+/* Tray */
+#tray {
+  color: #d1d1d1;
+  font-weight: 500;
+  margin: 0;
+  padding: 6px 14px;
+  border-radius: 0;
+  background: transparent;
+  border: none;
+  border-left: 1px solid #222222;
+  border-right: 1px solid #222222;
+  box-shadow: none;     /* remove outline */
+  outline: none;        /* remove focus outline */
+}
+
+/* ------------------------------
+   Clock
+   ------------------------------ */
+#clock {
+    font-weight: bold;
+    color: #d1d1d1;
+    margin: 4px 12px;
+    padding: 4px 12px;
+}
+
+/* ------------------------------
+   Power Profiles
+   ------------------------------ */
+#power-profiles-daemon {
+    padding: 4px 12px;
+}
+
+/* ------------------------------
+   Custom Power Button (Large)
+   ------------------------------ */
+#custom-powermenu {
+    color: #d1d1d1;
+    font-weight: 500;
+    margin: 0;
+    border-radius: 0;
+    background: transparent;
+    border: none;
+    border-right: 1px solid #222222;
+    box-shadow: none;
+    outline: none;  
+    font-size: 24px;
+}
+
+#custom-powermenu:hover {
+    background-color: #222222;
+    color: #ffffff;
+    border: none;        /* no outline on hover */
+    box-shadow: none;
+    outline: none;
+}
+
+#custom-volume {
+  color: #d1d1d1;
+  font-weight: 500;
+  margin: 0;
+  padding: 6px 14px;
+  border-radius: 0;
+  background: transparent;
+  border: none;
+  border-right: 1px solid #222222;
+  box-shadow: none;     /* remove outline */
+  outline: none;        /* remove focus outline */
+}

@@ -1,0 +1,114 @@
+#waybar {
+    background-color: #000000;
+    color: #d1d1d1;
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 12px;
+}
+
+
+/* Workspace buttons */
+#workspaces button {
+    color: #d1d1d1;
+    font-weight: bold;
+    margin: 1px;
+}
+
+#workspaces button.active {
+	background-color: #d1d1d1;
+	border-radius: 0;
+    color: black;
+}
+
+#workspaces button:hover {
+    background-color: #414040;
+    color: #000000;
+}
+
+#window {
+    margin: 4px;
+    color: #d1d1d1;
+    padding: 4px 12px;
+}
+
+/* Cava */
+#cava {
+    color: #d1d1d1;
+    padding: 0 10px;
+}
+
+#tray {
+    background-color: rgba(32, 32, 32, 0.37);
+}
+
+/* CPU, Network, etc. */
+#cpu, #memory, #temperature, #network, #mpd, #pulseaudio, #tray, #custom-powermenu, #scratchpad, #idle_inhibitor, #backlight, #keyboard-state, #power-profiles-daemon, #language {
+    color: #d1d1d1;
+    margin: 4px 2px;
+}
+
+#network {
+    background-color: rgba(32, 32, 32, 0.37);
+    padding: 4px 12px;
+}
+
+/* Clock */
+#clock {
+    font-weight: bold;
+    color: #d1d1d1;
+    margin: 4px 12px;
+    padding: 4px 12px;
+}
+
+#cpu {
+    background-color: #d1d1d1;
+    color: black;
+    padding: 2px 12px;
+    margin: 4px;
+}
+
+/* Memory */
+#memory {
+    padding: 0px 12px;
+    margin-left: -6px;
+}
+
+/* Tray */
+#tray {
+    padding: 0 10px;
+}
+
+/* Custom Power Button */
+#custom-power {
+    background-color: rgba(32, 32, 32, 0.37);
+}
+
+/* Volumn Slider */
+#pulseaudio-slider slider {
+    min-height: 0px;
+    min-width: 0px;
+    opacity: 0;
+    background-image: none;
+    border: none;
+    box-shadow: none;
+}
+
+#pulseaudio-slider trough {
+    min-height: 10px;
+    min-width: 80px;
+    background-color: black;
+}
+
+#pulseaudio-slider highlight {
+    min-width: 10px;
+    background-color: green;
+}
+
+#power-profiles-daemon {
+    /* background-color: rgba(165, 165, 165, 0.37); */
+    padding: 4px 12PX;
+}
+
+#custom-powermenu {
+    padding: 4px;
+    margin-right: 12px;
+}
