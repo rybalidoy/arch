@@ -7,43 +7,43 @@
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
-        "hyprland/workspaces",
-        "hyprland/window"
+      "hyprland/workspaces",
+      "hyprland/window"
     ],
     "modules-center": [
-        "clock",
-        "power-profiles-daemon"
+      "clock",
+      "power-profiles-daemon"
     ],
     "modules-right": [
-        "tray", 
-        "custom/volume",
-        "network",
-        "cpu",
-        "memory",
-        "custom/powermenu"
+      "tray", 
+      "custom/volume",
+      "network",
+      "cpu",
+      "memory",
+      "custom/powermenu"
     ],
 
     "tray": {
-        "icon-size": 20,
-        "spacing": 12
+      "icon-size": 20,
+      "spacing": 12
         // "icons": {
         //   "blueman": "bluetooth",
         //   "TelegramDesktop": "$HOME/.local/share/icons/hicolor/16x16/apps/telegram.png"
         // }N
     },
     "clock": {
-        "timezone": "Asia/Singapore",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}",
-        "format": "{:%I:%M %p}" // 12-hour format with AM/PM
+      "timezone": "Asia/Singapore",
+      "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+      "format-alt": "{:%Y-%m-%d}",
+      "format": "{:%I:%M %p}" // 12-hour format with AM/PM
     },
 
     "cpu": {
-        "format": "CPU {usage}%",
-        "tooltip": false
+      "format": "CPU {usage}%",
+      "tooltip": false
     },
     "memory": {
-        "format": "RAM {}%"
+      "format": "RAM {}%"
     },
     "power-profiles-daemon": {
       "format": "{icon}",
@@ -70,8 +70,8 @@
         "format": "{icon} {volume_bar} {volume}% ",
         "format-muted": " Muted",
         "format-icons": {
-            "headphones": "",
-            "default": ["", "SOUND"]
+          "headphones": "",
+          "default": ["", "SOUND"]
         },
         "on-scroll-up": "pamixer --increase 5",
         "on-scroll-down": "pamixer --decrease 5",
@@ -82,30 +82,30 @@
 
     },
     "custom/volume": {
-        "interval": 1,
-        "exec": "~/dotfiles/waybar/volume_bar.sh",
-        "return-type": "json",
-	"on-click": "hyprctl dispatch exec '[float;move toworkspace current] pavucontrol'",
-        "on-scroll-up": "pamixer --increase 5",
-        "on-scroll-down": "pamixer --decrease 5"
+      "interval": 1,
+      "exec": "~/dotfiles/waybar/volume_bar.sh",
+      "return-type": "json",
+      "on-click": "hyprctl dispatch exec '[float;move toworkspace current] pavucontrol'",
+      "on-scroll-up": "pamixer --increase 5",
+      "on-scroll-down": "pamixer --decrease 5"
     },
 
     "custom/media": {
-        "format": "{icon} {text}",
-        "return-type": "json",
-        "max-length": 40,
-        "format-icons": {
-            "spotify": "",
-            "default": "🎜"
-        },
-        "escape": true,
-        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
+      "format": "{icon} {text}",
+      "return-type": "json",
+      "max-length": 40,
+      "format-icons": {
+        "spotify": "",
+        "default": "🎜"
+      },
+      "escape": true,
+      "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     },
     "custom/powermenu": {
-        "format": "⏻",
-        "tooltip": "Power Menu",
-        "on-click": "~/dotfiles/waybar/power_menu.sh"
+      "format": "⏻",
+      "tooltip": "Power Menu",
+      "on-click": "~/dotfiles/waybar/power_menu.sh"
     }
 
 }
